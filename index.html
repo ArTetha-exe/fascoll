@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FASYA Collection — Sandal Handmade Premium</title>
+  <meta name="description" content="FASYA Collection menyediakan sandal handmade premium dari kulit dan vinil untuk pria, wanita, dan anak-anak. Berkreasi Dengan Hati." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       HEADER — Sticky Navigation
+  ════════════════════════════════════════════ -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#" class="header__logo" id="logo">
+        <span class="header__logo-text">FASYA <span class="header__logo-accent">Collection</span></span>      </a>
+
+      <nav class="header__nav" id="main-nav">
+        <a href="#beranda" class="header__nav-link active">Beranda</a>
+        <a href="#katalog" class="header__nav-link">Katalog</a>
+        <a href="#tentang" class="header__nav-link">Tentang Kami</a>
+        <a href="#cara-pesan" class="header__nav-link">Cara Pesan</a>
+      </nav>
+
+      <button class="header__hamburger" id="btn-hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+    <nav class="mobile-nav">
+      <a href="#beranda" class="mobile-nav__link">Beranda</a>
+      <a href="#katalog" class="mobile-nav__link">Katalog</a>
+      <a href="#tentang" class="mobile-nav__link">Tentang Kami</a>
+      <a href="#cara-pesan" class="mobile-nav__link">Cara Pesan</a>
+    </nav>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       HERO SECTION
+  ════════════════════════════════════════════ -->
+  <section class="hero" id="beranda">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <h1 class="hero__title">FASYA Collection</h1>
+      <p class="hero__subtitle">Berkreasi Dengan Hati</p>
+      <a href="#katalog" class="hero__cta" id="btn-lihat-katalog">Lihat Katalog</a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       KATALOG SECTION
+  ════════════════════════════════════════════ -->
+  <section class="katalog" id="katalog">
+    <div class="katalog__header">
+      <h2 class="katalog__title">Katalog Kami</h2>
+      <p class="katalog__desc">Jelajahi koleksi sandal buatan tangan kami. Setiap pasang dibuat dengan presisi dan dedikasi.</p>
+    </div>
+
+    <!-- Filter Controls -->
+    <div class="katalog__filters" id="filters">
+      <!-- Kategori Filter -->
+      <div class="filter-group">
+        <span class="filter-group__label">Kategori</span>
+        <div class="filter-pills" id="filter-kategori">
+          <button class="filter-pill active" data-filter="Semua">Semua</button>
+          <button class="filter-pill" data-filter="Pria">Pria</button>
+          <button class="filter-pill" data-filter="Wanita">Wanita</button>
+          <button class="filter-pill" data-filter="Anak">Anak</button>
+        </div>
+      </div>
+      <!-- Bahan Filter -->
+      <div class="filter-group">
+        <span class="filter-group__label">Bahan</span>
+        <div class="filter-pills" id="filter-bahan">
+          <button class="filter-pill active" data-filter="Semua">Semua</button>
+          <button class="filter-pill" data-filter="Kulit">Kulit</button>
+          <button class="filter-pill" data-filter="Vinil">Vinil</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="katalog__grid" id="product-grid">
+      <!-- Kartu produk akan di-render oleh JavaScript -->
+    </div>
+
+    <!-- Empty State -->
+    <div class="katalog__empty hidden" id="empty-state">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+      <p>Tidak ada produk yang cocok dengan filter yang dipilih.</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       TENTANG KAMI SECTION
+  ════════════════════════════════════════════ -->
+  <section class="tentang" id="tentang">
+    <div class="tentang__inner">
+      <div class="tentang__text">
+        <h2 class="tentang__title">Tentang Kami</h2>
+        <p class="tentang__desc">FASYA Collection adalah brand sandal lokal yang mengutamakan kualitas dan kenyamanan. Setiap produk kami dibuat secara handmade oleh pengrajin berpengalaman menggunakan bahan pilihan berkualitas tinggi.</p>
+        <p class="tentang__desc">Kami melayani pembelian eceran maupun grosir (per kodi) dengan harga yang kompetitif. Hubungi kami langsung melalui WhatsApp untuk pemesanan dan konsultasi.</p>
+        <div class="tentang__stats">
+          <div class="tentang__stat">
+            <span class="tentang__stat-num">500+</span>
+            <span class="tentang__stat-label">Produk Terjual</span>
+          </div>
+          <div class="tentang__stat">
+            <span class="tentang__stat-num">100%</span>
+            <span class="tentang__stat-label">Handmade</span>
+          </div>
+          <div class="tentang__stat">
+            <span class="tentang__stat-num">50+</span>
+            <span class="tentang__stat-label">Reseller Aktif</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CARA PESAN SECTION
+  ════════════════════════════════════════════ -->
+  <section class="cara-pesan" id="cara-pesan">
+    <h2 class="cara-pesan__title">Cara Pesan</h2>
+    <div class="cara-pesan__steps">
+      <div class="cara-pesan__step">
+        <div class="cara-pesan__step-num">1</div>
+        <h3>Pilih Produk</h3>
+        <p>Jelajahi katalog dan pilih sandal favorit Anda. Pilih warna, tipe pembelian, dan masukkan ke keranjang.</p>
+      </div>
+      <div class="cara-pesan__step">
+        <div class="cara-pesan__step-num">2</div>
+        <h3>Isi Data Pengiriman</h3>
+        <p>Buka keranjang, lengkapi nama, alamat, dan catatan khusus untuk pesanan Anda.</p>
+      </div>
+      <div class="cara-pesan__step">
+        <div class="cara-pesan__step-num">3</div>
+        <h3>Kirim via WhatsApp</h3>
+        <p>Klik tombol kirim dan pesanan Anda akan langsung terformat rapi di WhatsApp kami.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo">🩴 FASYA Collection</span>
+        <p class="footer__tagline">Berkreasi Dengan Hati</p>
+        <p class="footer__copy">&copy; 2026 FASYA Collection. All rights reserved.</p>
+      </div>
+      <div class="footer__links">
+        <h4>Navigasi</h4>
+        <a href="#beranda">Beranda</a>
+        <a href="#katalog">Katalog</a>
+        <a href="#tentang">Tentang Kami</a>
+        <a href="#cara-pesan">Cara Pesan</a>
+      </div>
+      <div class="footer__links">
+        <h4>Hubungi Kami</h4>
+        <a href="#">WhatsApp</a>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       CART DRAWER (Slide-in dari kanan)
+  ════════════════════════════════════════════ -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer">
+    <div class="cart-drawer__header">
+      <h3>Keranjang Belanja</h3>
+      <button class="cart-drawer__close" id="btn-close-cart" aria-label="Tutup keranjang">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="cart-drawer__items" id="cart-items">
+      <!-- Item keranjang di-render oleh JS -->
+    </div>
+
+    <div class="cart-drawer__empty" id="cart-empty">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <path d="M16 10a4 4 0 0 1-8 0"/>
+      </svg>
+      <p>Keranjang masih kosong</p>
+    </div>
+
+    <div class="cart-drawer__footer" id="cart-footer">
+      <div class="cart-drawer__total">
+        <span>Total</span>
+        <span id="cart-total">Rp 0</span>
+      </div>
+      <div class="cart-drawer__form">
+        <input type="text" id="input-nama" placeholder="Nama Lengkap" />
+        <input type="text" id="input-alamat" placeholder="Alamat Pengiriman" />
+        <textarea id="input-catatan" placeholder="Catatan tambahan (ukuran, dsb)" rows="2"></textarea>
+      </div>
+      <button class="cart-drawer__checkout" id="btn-checkout">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+        </svg>
+        Kirim Pesanan via WhatsApp
+      </button>
+    </div>
+  </aside>
+
+  <!-- ═══════════════════════════════════════════
+       FLOATING CART BUTTON
+  ════════════════════════════════════════════ -->
+  <button class="fab-cart" id="btn-open-cart" aria-label="Buka keranjang belanja">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+      <line x1="3" y1="6" x2="21" y2="6"/>
+      <path d="M16 10a4 4 0 0 1-8 0"/>
+    </svg>
+    <span class="fab-cart__badge" id="cart-badge">0</span>
+  </button>
+
+  <!-- ═══════════════════════════════════════════
+       TOAST NOTIFICATION
+  ════════════════════════════════════════════ -->
+  <div class="toast" id="toast">
+    <span id="toast-msg"></span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
